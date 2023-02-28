@@ -43,5 +43,38 @@ function reveal() {
       }
     }
   }
-  
   window.addEventListener("scroll", reveal);
+
+  (function () {
+    const pictures = [
+        "1",
+        "2",
+        "3"
+    ];
+
+    const buttons = document.querySelectorAll(".slide")
+    const imgSlide = document.querySelector(".header")
+
+    let counter = 0
+
+    buttons.forEach(function (button){
+        button.addEventListener("click", function (e) {
+            if (button.classList.contains('slide-left')){
+                counter--
+                if (counter < 0){
+                    counter = pictures.length - 1
+                }
+                imgSlide.style.background = `url('./img/${pictures[counter]}.jpg')`
+            }
+            if (button.classList.contains('slide-right')){
+                counter++
+                if (counter > pictures.length - 1){
+                    counter = 0
+                }
+                imgSlide.style.background = `url('./img/${pictures[counter]}.jpg')`
+            }
+        })
+    })
+
+
+  })();

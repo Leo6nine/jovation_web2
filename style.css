@@ -178,6 +178,15 @@ body{
     height: 285px;
     margin-bottom: 2rem;
 }
+.int-text> h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(24px, 10vw, 64px);
+    line-height: 148.9%;
+    width: 869px;
+    height: 285px;
+    margin-bottom: 2rem;
+}
 
 .button{
     border: none;
@@ -196,6 +205,32 @@ body{
 }
 .button:active{
     box-shadow: 1px 3px 6px 1px #888888;
+}
+
+
+.slide-left {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    background-color: #515ecf;
+    color: var(--white);
+    transform: translate(-50%, -70%);
+    border: 0.2 solid var(--light-brown);
+    font-size: 1.5rem;
+    padding: 15px;
+    cursor: pointer;
+}
+.slide-right {
+    position: absolute;
+    top: 70%;
+    right: 10%;
+    background-color: #515ecf;
+    color: var(--white);
+    transform: translate(50%, -70%);
+    border: 0.2 solid var(--light-brown);
+    font-size: 1.5rem;
+    padding: 15px;
+    cursor: pointer;
 }
 
 .social-media{
@@ -321,7 +356,6 @@ body{
 
     .hero-text {
         top: 45%;
-        transform: translate(-50%, -50%);
     }
 
     .hero-text> h1{
@@ -384,11 +418,7 @@ footer{
     color: var(--light-brown);
 }
 
-@media only screen and (max-width: 550px) {
-    .footer-icons, .footer-nav{
-        flex-direction: column;
-    }
-}
+
 
 /* Internship and Training */
 .int-header{
@@ -423,11 +453,7 @@ footer{
 .tra>:nth-child(2){
     position: absolute;
 }
-.int-text{
-    margin: 0 auto;
-    width: 70%;
-    font-size: 16px;
-}
+
 .int-btn{
     width: 25rem;
     border: none;
@@ -449,43 +475,49 @@ footer{
 }
 
 /* PROJECT PAGE */
-article {
+
+.pro-header{
+    background-image: url("./img/python.jpg");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;   
+}
+.proj {
     padding-top: 2rem;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
     gap: 1rem;
     justify-content: center;
     align-items: center;
 }
 
-article>div>h2 {
+.proj>div>h2 {
     color: var(--dark-brown);
     text-transform: uppercase;
 }
 
-article>div>p {
+.proj>div>p {
     text-align: justify;
     color: var(--dark-brown);
 }
 
-@media only screen and (min-width: 900px) {
-    article {
-        padding-top: 2rem;
-        width: 50%;
-        margin: 0 auto;
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
-        align-items: center;
+@media only screen and (max-width: 900px) {
+    .proj{
+        flex-direction: column;
     }
+}
 
-    .int-text{
-        margin: 0 auto;
-        width: 90%;
-        margin-bottom: 3rem;
-    }
+/* Contact Us */
+.con-header{
+    background-image: url("./img/philip-strong-iOBTE2xsYko-unsplash.jpg");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;   
 }
 
   /* CSS ANIMATIONS */
@@ -580,3 +612,9 @@ article>div>p {
     transform: translateY(0);
     opacity: 1;
   }
+
+  @media only screen and (max-width: 550px) {
+    .footer-icons, .footer-nav{
+        flex-direction: column;
+    }
+}
