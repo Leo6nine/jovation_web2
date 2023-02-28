@@ -12,24 +12,38 @@
 <body>
     <div class="body">
         <div class="header" id="home">
-            <div class="nav">
-                <img src="#" alt="LOgo" class="logo" width="130"/>
-                <ul class="nav-items">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="./project.html">Projects</a></li>
-                    <li><a href="./intern.html">Internship/Training</a></li>
-                </ul>
+            <div class="navbar">
+                <div class="nav">
+                    <img src="./img/logo.png" alt="LOgo" class="logo" width="130"/>
+                    <ul class="nav-items">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="./project.html">Projects</a></li>
+                        <li><a href="./intern.html">Internship/Training</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <nav class="mobile-nav">
+                        <a href="#" class="mobile-list">Home</a>
+                        <a href="#" class="mobile-list">About</a>
+                        <a href="./project.html" class="mobile-list">Projects</a>
+                        <a href="./intern.html" class="mobile-list">Internship/Training</a>
+                    </nav>
+                    <button class="hamburger">
+                        <div class="bar"></div>
+                    </button>
+                </div>
             </div>
             <hr />
             <div class="hero">
-                <div class="hero-text">
+                <div class="hero-text animate fadeIn half">
                     <h3>A WORLD OF INNOVATION</h3>
                     <h1>INNOVATE YOUR BUSINESS<br>WITH DYNAMIC SOLUTIONS<br>AND OPTIMIZATION</h1>
-                    <button class="btn">Hire me</button>
+                    <!-- <button class="button" >Contact Us</button> -->
+                    <a href="./contact.html" class="button animate fadeInUp one">Contact Us</a>
                 </div>
             </div>
-            <div class="social-media">
+            <div class="social-media animate fadeInUp two">
                 <a href="https://mail.yahoo.com/jovation@jovation.net" target="_blank" class="fa fa-envelope"></a>
                 <a href="#" target="_blank" class="fa fa-solid fa-phone"></a>
                 <a href="https://www.twitter.com@jovation24" target="_blank" class="fa fa-twitter"></a>
@@ -43,20 +57,20 @@
                 <span>about us</span>
                 <span>about us</span>
             </div>
-            <div class="info">
-                <img src="./img/Frame 112.svg" alt="" class="corner-img">
+            <div class="info reveal">
+                <img src="./img/about.jpg" alt="" class="corner-img">
                 <div class="text">
                     <div class="textwrap">
                         <p>Jovation is an innovative tech company that proffer solutions to the operational and administrative world by analyzing existing Data Process, Restructuring Data Process, Designing Data Collection and Storage Process and Process Automation which involves developing applications to carry out the process(es) based on your current Process, Data Structure and requirement.</p>
                         <p>Our services provide you with a structure that efficiently raises your current standard of Time Management, Data Integrity and Accountability, Information Accessibility and Decision making.</p>
                         <p>Let us provide the solutions you need so you enjoy the long-lasting benefits of our services.</p>
                     </div>
-                    <button>Contact Us</button>
+                    <button class="button">Contact Us</button>
                 </div>
             </div>
         </section>
         <footer>
-            <img src="" alt="">
+            <img src="./img/logo.png" alt="Footer Logo" width="150">
             <ul class="footer-nav" style="margin-bottom: 1rem;">
                 <li><a href="#">Home</a></li>
                 <li><a href="">About</a></li>
@@ -64,16 +78,15 @@
                 <li><a href="./intern.html">Internship/Training</a></li>
             </ul>
             <div class="footer-icons">
-                <a href="#" class="fa fa-envelope"></a>
-                <a href="#" class="fa fa-solid fa-phone"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-whatsapp"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-youtube"></a>
+                <a href="https://mail.yahoo.com/jovation@jovation.net" target="_blank" class="fa fa-envelope"></a>
+                <a href="#" target="_blank" class="fa fa-solid fa-phone"></a>
+                <a href="https://www.twitter.com@jovation24" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://wa.me/09014663673" target="_blank" class="fa fa-whatsapp"></a>
+                <a href="https://www.instagram.com@jovation24" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/channel/UC3MPXumrKF0HOF0N3H4koWg" target="_blank" class="fa fa-youtube"></a>
             </div>
         </footer>
     </div>
-    
-    
+    <script src="./app.js"></script>
 </body>
 </html>
