@@ -142,7 +142,7 @@ body{
 
 
 .nav-active {
-    position: fixed;
+    /* position: fixed; */
     background-color:#fff;
     top: 0;
     box-shadow: 5px -1px 12px -5px grey;
@@ -161,6 +161,9 @@ body{
         height: 50px;
         border-radius: 50%;
         position: absolute;
+    }
+    .slide-left, .slide-right{
+        display: none;
     }
 }
 
