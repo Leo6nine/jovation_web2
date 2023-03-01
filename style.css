@@ -160,9 +160,6 @@ body{
         border-radius: 50%;
         position: absolute;
     }
-    .menu {
-        /* border: 1px solid black; */
-    }
 }
 
 .hero-text {
