@@ -1,11 +1,11 @@
-const navbar = document.querySelector('.navbar');
-window.onscroll = () => {
-    if (window.scrollY > 300) {
-        navbar.classList.add('nav-active');
-    } else {
-        navbar.classList.remove('nav-active');
-    }
-};
+// const navbar = document.querySelector('.navbar');
+// window.onscroll = () => {
+//     if (window.scrollY > 300) {
+//         navbar.classList.add('nav-active');
+//     } else {
+//         navbar.classList.remove('nav-active');
+//     }
+// };
 
 const menu_btn = document.querySelector('.hamburger');
 const mobile_menu = document.querySelector('.mobile-nav');
