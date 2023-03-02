@@ -64,14 +64,14 @@ function reveal() {
                 if (counter < 0){
                     counter = pictures.length - 1
                 }
-                imgSlide.style.background = `url('./img/${pictures[counter]}.jpg')`
+                imgSlide.style.background = `linear-gradient(rgba(255, 255, 255, 0.473), rgba(255, 255, 255, 0.726)), url('./img/${pictures[counter]}.jpg')`
             }
             if (button.classList.contains('slide-right')){
                 counter++
                 if (counter > pictures.length - 1){
                     counter = 0
                 }
-                imgSlide.style.background = `url('./img/${pictures[counter]}.jpg')`
+                imgSlide.style.background = `linear-gradient(rgba(255, 255, 255, 0.473), rgba(255, 255, 255, 0.726)), url('./img/${pictures[counter]}.jpg')`
             }
         })
     })

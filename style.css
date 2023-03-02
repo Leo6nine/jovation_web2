@@ -31,7 +31,7 @@ body{
 }
 
 .header{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.295), rgba(255, 255, 255, 0.664)), url("./img/1.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.514), rgba(255, 255, 255, 0.726)), url("./img/1.jpg");
     height: 700px;
     background-position: center;
     background-repeat: no-repeat;
@@ -305,31 +305,17 @@ body{
     margin: 0 auto;
     text-transform: uppercase;
 }
-.headings>:nth-child(1){
+.headings>span{
     position: relative;
-    width: 977px;
-    height: 142px;
     font-family: 'Tiro Bangla';
     font-style: normal;
     font-weight: 400;
-    font-size: 120px;
+    font-size: 80px;
     line-height: 148.9%;
     text-align: center;
     letter-spacing: 0.05em;
-    color: #CCCCCC;
-}
-.headings>:nth-child(2){
-    position: absolute;
-    width: 241px;
-    height: 71px;
-    left: 40%;
-    top: 90px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 148.9%; 
-    color: var(--dark-brown);
+    color: var(--light-brown);
+    text-shadow: -5px 2px 10px var(--dark-brown);
 }
 
 .info{
