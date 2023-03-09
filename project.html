@@ -12,6 +12,29 @@
     <body>
         <div class="body">
             <div class="pro-header" id="home">
+                <div class="navbar nav-active">
+                    <div class="nav">
+                        <img src="./img/logo.png" alt="LOgo" class="logo"/>
+                        <ul class="nav-items">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./index.html #about">About</a></li>
+                            <li><a href="./project.html">Projects</a></li>
+                            <li><a href="./intern.html">Internship/Training</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <nav class="mobile-nav">
+                            <a href="./index.html" class="mobile-list">Home</a>
+                            <a href="./index.html #about" class="mobile-list">About</a>
+                            <a href="./project.html" class="mobile-list">Projects</a>
+                            <a href="./intern.html" class="mobile-list">Internship/Training</a>
+                        </nav>
+                        <button class="hamburger">
+                            <div class="bar"></div>
+                        </button>
+                    </div>
+                </div>
+                <hr />
                 <div class="hero">
                     <div class="int-text hero-text">
                         <h1>PROJECTS</h1>
@@ -19,11 +42,41 @@
                 </div>
             </div>
             <section class="main">
-                <div class="proj">
+                <div class="proj slideLeft">
                     <video width="350" height="255" poster="./img/data-re.jpg" controls>
                         <source src="./vid/Data_Reordering.mp4">
                     </video>
-                    <div>
+                    <div class="">
+                        <h2>Data Transformation</h2>
+                        <p>Are you tired of manually reordering and transforming 
+                            your data which could take hours to days or week or 
+                            even months? We’ve got you covered. Let us automate 
+                            your process and save you the time and energy with 
+                            the click of a button. Our automating process is 
+                            reliant fast and efficient.
+                        </p>
+                    </div>
+                </div>
+                <div class="proj slideRight" >
+                    <video width="350" height="255" poster="./img/data-re.jpg" controls>
+                        <source src="./vid/Data_Reordering.mp4">
+                    </video>
+                    <div class="">
+                        <h2>Data Transformation</h2>
+                        <p>Are you tired of manually reordering and transforming 
+                            your data which could take hours to days or week or 
+                            even months? We’ve got you covered. Let us automate 
+                            your process and save you the time and energy with 
+                            the click of a button. Our automating process is 
+                            reliant fast and efficient.
+                        </p>
+                    </div>
+                </div>
+                <div class="proj slideLeft">
+                    <video width="350" height="255" poster="./img/data-re.jpg" controls>
+                        <source src="./vid/Data_Reordering.mp4">
+                    </video>
+                    <div class="">
                         <h2>Data Transformation</h2>
                         <p>Are you tired of manually reordering and transforming 
                             your data which could take hours to days or week or 
@@ -36,10 +89,10 @@
                 </div>
             </section>
             <footer>
-                <img src="./img/logo.png" alt="Footer Logo" width="150">
+                <img src="./img/logo-white.png" alt="Footer Logo" width="150">
                 <ul class="footer-nav" style="margin-bottom: 1rem;">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html #about">About</a></li>
                     <li><a href="./project.html">Projects</a></li>
                     <li><a href="./intern.html">Internship/Training</a></li>
                 </ul>
@@ -53,6 +106,7 @@
                 </div>
             </footer>
         </div>
+        <script src="./app.js"></script>
     </body>
 </html>
 

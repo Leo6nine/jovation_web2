@@ -29,12 +29,14 @@ mobileList.forEach((btn)=>{
 })
 
 function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
+    let reveals = document.querySelectorAll(".reveal");
+    let slideLeft = document.querySelectorAll(".slideLeft");
+    let slideRight = document.querySelectorAll(".slideRight");
   
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
+    for (let i = 0; i < reveals.length; i++) {
+      let windowHeight = window.innerHeight;
+      let elementTop = reveals[i].getBoundingClientRect().top;
+      let elementVisible = 150;
   
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
@@ -42,9 +44,35 @@ function reveal() {
         reveals[i].classList.remove("active");
       }
     }
-  }
+
+    for (let i = 0; i < slideLeft.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = slideLeft[i].getBoundingClientRect().top;
+        let elementVisible = 80;
+    
+        if (elementTop < windowHeight - elementVisible) {
+          slideLeft[i].classList.add("active");
+        } else {
+          slideLeft[i].classList.remove("active");
+        }
+      }
+
+      for (let i = 0; i < slideRight.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = slideRight[i].getBoundingClientRect().top;
+        let elementVisible = 80;
+    
+        if (elementTop < windowHeight - elementVisible) {
+          slideRight[i].classList.add("active");
+        } else {
+          slideRight[i].classList.remove("active");
+        }
+      }
+}
   window.addEventListener("scroll", reveal);
 
+
+  
   (function () {
     const pictures = [
         "1",
@@ -76,5 +104,36 @@ function reveal() {
         })
     })
 
-
   })();
+
+  let images = [
+        "1",
+        "2",
+        "3"
+  ];
+  
+  let img = document.querySelector(".header");
+  let index = 0;
+  let iterations = 0;
+  
+  let updateImage = function() {
+    /* reset index to zero if current index is greater than number of images.
+     * increment iterations variable since it means we've done one whole loop.
+     */
+    if (index >= images.length) {
+      index = 1;
+      
+    }
+  
+    // set the background image
+    img.style.background = `linear-gradient(rgba(255, 255, 255, 0.473), rgba(255, 255, 255, 0.726)), url('./img/${images[index]}.jpg')`
+
+    index++;
+    
+  }
+  
+  // update first image
+  updateImage();
+  
+  // initiate timer
+  let interval = setInterval(updateImage, 5000);
