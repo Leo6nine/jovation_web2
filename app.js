@@ -33,17 +33,17 @@ function reveal() {
     let slideLeft = document.querySelectorAll(".slideLeft");
     let slideRight = document.querySelectorAll(".slideRight");
   
-    for (let i = 0; i < reveals.length; i++) {
-      let windowHeight = window.innerHeight;
-      let elementTop = reveals[i].getBoundingClientRect().top;
-      let elementVisible = 150;
+    // for (let i = 0; i < reveals.length; i++) {
+    //   let windowHeight = window.innerHeight;
+    //   let elementTop = reveals[i].getBoundingClientRect().top;
+    //   let elementVisible = 150;
   
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
+    //   if (elementTop <= windowHeight - elementVisible) {
+    //     reveals[i].classList.add("active");
+    //   } else {
+    //     reveals[i].classList.remove("active");
+    //   }
+    // }
 
     for (let i = 0; i < slideLeft.length; i++) {
         let windowHeight = window.innerHeight;
@@ -81,7 +81,7 @@ function reveal() {
     ];
 
     const buttons = document.querySelectorAll(".slide")
-    const imgSlide = document.querySelector(".header")
+    const imgSlide = document.querySelector(".corner-img")
 
     let counter = 0
 
@@ -112,7 +112,7 @@ function reveal() {
         "3"
   ];
   
-  let img = document.querySelector(".header");
+  let img = document.querySelector(".corner-img");
   let index = 0;
   let iterations = 0;
   
