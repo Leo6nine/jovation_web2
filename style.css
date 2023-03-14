@@ -76,7 +76,7 @@ body{
 .navbar{
     top: 0;
     left: 0;
-    background: var(--white);
+    background: var(--light-brown);
     z-index: 10;
     width: 100%;
     transition: 0.3s ease-in-out;
@@ -100,12 +100,12 @@ body{
     
 }
 .nav-items>li>a{
-    border: 1px solid var(--dark-brown);
+    border: 1px solid var(--white);
     border-radius: 10px;
     display: block;
-    padding: 5px 8px;
+    padding: 4px 7px;
     cursor: pointer;
-    background: var(--light-brown);
+    background: transparent;
     color: var(--white);
 }
 .nav-items>li>a:hover{
@@ -284,10 +284,11 @@ body{
     text-align: center;
     letter-spacing: 0.05em;
     color: var(--light-brown);
-    text-shadow: -2px 2px 5px var(--dark-brown);
+    text-shadow: -2px 2px 3px var(--dark-brown);
 }
 
 .info{
+    padding-top: 2rem;
     display: flex;
     gap: 2rem;
 }
@@ -300,12 +301,12 @@ body{
     text-align: center;
     justify-content: center;
 }
-.corner>.corner-img{
+.corner .corner-img{
     /* position: relative; */
-    background-image: linear-gradient(rgba(255, 255, 255, 0.144), rgba(255, 255, 255, 0.322)), url("./img/1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("./img/1.jpg");
+    /* background-position: center; */
+    /* background-repeat: inherit; */
+    background-size: inherit;
     max-width: 100%;
     height: 80%;
     border-radius: 0px 200px 0px 0px;
@@ -420,14 +421,14 @@ footer{
 
 
 /* Internship and Training */
-.int-header{
+/* .int-header{
     background-image: url("./img/intern.jpg");
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;   
-}
+} */
 .int-text>h1{
     color: var(--white);
     display: flex;
@@ -485,14 +486,14 @@ footer{
 
 /* PROJECT PAGE */
 
-.pro-header{
+/* .pro-header{
     background-image: url("./img/python.jpg");
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;   
-}
+} */
 /* .main>:nth-child(3){
     margin-bottom: 2rem;
 

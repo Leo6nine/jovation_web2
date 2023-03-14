@@ -77,7 +77,8 @@ function reveal() {
     const pictures = [
         "1",
         "2",
-        "3"
+        "3",
+        "4"
     ];
 
     const buttons = document.querySelectorAll(".slide")
@@ -92,14 +93,14 @@ function reveal() {
                 if (counter < 0){
                     counter = pictures.length - 1
                 }
-                imgSlide.style.background = `linear-gradient(rgba(255, 255, 255, 0.473), rgba(255, 255, 255, 0.726)), url('./img/${pictures[counter]}.jpg')`
+                imgSlide.style.background = `linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('./img/${pictures[counter]}.jpg')`
             }
             if (button.classList.contains('slide-right')){
                 counter++
                 if (counter > pictures.length - 1){
                     counter = 0
                 }
-                imgSlide.style.background = `linear-gradient(rgba(255, 255, 255, 0.473), rgba(255, 255, 255, 0.726)), url('./img/${pictures[counter]}.jpg')`
+                imgSlide.style.background = `linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('./img/${pictures[counter]}.jpg')`
             }
         })
     })
@@ -109,7 +110,8 @@ function reveal() {
   let images = [
         "1",
         "2",
-        "3"
+        "3",
+        "4"
   ];
   
   let img = document.querySelector(".corner-img");
@@ -126,7 +128,7 @@ function reveal() {
     }
   
     // set the background image
-    img.style.background = `linear-gradient(rgba(255, 255, 255, 0.473), rgba(255, 255, 255, 0.726)), url('./img/${images[index]}.jpg')`
+    img.style.background = `linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('./img/${images[index]}.jpg')`
 
     index++;
     
