@@ -84,6 +84,7 @@ window.addEventListener("scroll", reveal);
           counter = pictures.length - 1;
         }
         imgSlide.style.background = `linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('./img/${pictures[counter]}.jpg')`;
+        imgSlide.style.background100%";Size = "100% 100%";
       }
       if (button.classList.contains("slide-right")) {
         counter++;
@@ -91,6 +92,7 @@ window.addEventListener("scroll", reveal);
           counter = 0;
         }
         imgSlide.style.background = `linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('./img/${pictures[counter]}.jpg')`;
+        imgSlide.style.background100%";Size = "100% 100%";
       }
     });
   });
@@ -112,7 +114,7 @@ let updateImage = function () {
 
   // set the background image
   img.style.background = `linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url('./img/${images[index]}.jpg')`;
-
+  img.style.backgroundSize = "100% 100%";
   index++;
 };
 
